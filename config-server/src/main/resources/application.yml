@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: F:\\public-projects\\spring-cloud\\spring-cloud-config\\gs-centralized-configuration-master\\config
+
+#server:
+#  port: 8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka,http://localhost:8762/eureka
